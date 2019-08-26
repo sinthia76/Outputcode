@@ -46,8 +46,8 @@ void loop()
 
 
 uint8_t getFingerprintID() {
-  uint8_t p = finger.getImage();
-  switch (p) {
+uint8_t p = finger.getImage();
+    switch (p) {
     case FINGERPRINT_OK:
       Serial.println("Image taken");
       break;
@@ -68,7 +68,7 @@ uint8_t getFingerprintID() {
 
   p = finger.image2Tz();
   
-  switch (p) {
+    switch (p) {
     case FINGERPRINT_OK:
       Serial.println("Image converted");
       break;
